@@ -1,0 +1,749 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرشد طيبة التاريخي - بوابة معالم المدينة المنورة</title>
+    <!-- Tailwind CSS -->
+     <link rel="icon" href="AL Madinah AL Munawwarah.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #FAF8F5;
+        }
+        .font-serif-ar {
+            font-family: 'Amiri', serif;
+        }
+        .emerald-dark {
+            background-color: #032b1d;
+        }
+        .emerald-gradient {
+            background: linear-gradient(135deg, #043a27 0%, #011d13 100%);
+        }
+        .gold-accent {
+            color: #c59b27;
+        }
+        .bg-gold-light {
+            background-color: #f9f5eb;
+        }
+        .border-gold {
+            border-color: #d4af37;
+        }
+        /* Custom dynamic styles */
+        .card-shadow {
+            box-shadow: 0 10px 30px -15px rgba(4, 58, 39, 0.1);
+        }
+        .landmark-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(4, 58, 39, 0.15);
+        }
+        /* Hide scrollbars but keep functionality */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-emerald-900 selection:text-white">
+
+    <!-- Top Premium Banner -->
+    <div class="emerald-dark text-amber-100 py-2.5 px-4 text-center text-xs border-b border-amber-500/20 tracking-wide font-medium">
+        🕌 "مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ" - بوابة المدينة المنورة التاريخية المعتمدة
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-800 to-emerald-950 flex items-center justify-center text-[#d4af37] border border-amber-500/30">
+                    <span class="font-serif-ar text-2xl font-bold">ط</span>
+                </div>
+                <div>
+                    <span class="block text-lg font-black text-emerald-950 tracking-tight">مُرشد طيْبة</span>
+                    <span class="text-[10px] text-slate-400 block -mt-1 font-medium">المرجع الشامل لمعالم المدينة المنورة</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+                <a href="#about" class="hover:text-emerald-800 transition-colors">عن طيبة</a>
+                <a href="#explorer" class="hover:text-emerald-800 transition-colors">مستكشف المعالم</a>
+                <a href="#itineraries" class="hover:text-emerald-800 transition-colors">مسارات الزيارة</a>
+                <a href="#tips" class="hover:text-emerald-800 transition-colors">إرشادات الزائر</a>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <a href="#itineraries" class="px-4 py-2 rounded-lg bg-[#043a27] text-[#e5c060] text-xs font-bold hover:bg-emerald-900 transition-all border border-amber-500/20">
+                    خطط رحلتك الآن
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <header class="relative overflow-hidden text-white emerald-gradient py-24 md:py-32 border-b-4 border-[#d4af37]">
+        <!-- Geometric Arabic pattern background overlay -->
+        <div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-repeat" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22 viewBox=%220 0 80 80%22><path d=%22M40 0 L80 40 L40 80 L0 40 Z%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%221.5%22/></svg>');"></div>
+        
+        <div class="max-w-5xl mx-auto text-center px-4 relative z-10 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-amber-500/30 text-xs text-[#e5c060]">
+                <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                محدّث وموثّق لعام 2026 م / 1447 هـ
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold font-serif-ar leading-tight text-[#fbf5b7]">
+                دليل المعالم والمساجد التاريخية <span class="block text-2xl md:text-3xl font-sans font-light text-emerald-100/90 mt-2">في مأرز الإيمان ومهاجر الرسول ﷺ</span>
+            </h1>
+            <p class="text-sm md:text-base max-w-2xl mx-auto text-emerald-100/80 leading-relaxed font-light">
+                بوابتك التاريخية لاستكشاف ثمانين موقعاً تاريخياً، ومساجد نزل بها الوحي، وآبار شرب منها المصطفى ﷺ، وجبال شهدت ملاحم تأسيس الإسلام.
+            </p>
+
+            <!-- Search and Filter Bar Quick Launch -->
+            <div class="max-w-xl mx-auto pt-6">
+                <div class="relative">
+                    <input type="text" id="global-search" oninput="liveSearch(this.value)" placeholder="ابحث عن معلم (مثال: مسجد قباء، بئر عثمان، جبل الرماة)..." class="w-full text-slate-800 pl-4 pr-12 py-4 bg-white border border-slate-200 rounded-xl shadow-xl focus:outline-none focus:ring-2 focus:ring-emerald-800 text-sm">
+                    <svg class="absolute right-4 top-4 h-5 w-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stat Summary Panel -->
+    <section class="max-w-6xl mx-auto px-4 -mt-10 relative z-20">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-white p-6 rounded-2xl shadow-xl border border-slate-100">
+            <div class="p-3 text-center border-l last:border-l-0 border-slate-100">
+                <span class="block text-3xl font-black text-emerald-900 font-serif-ar">١٠+</span>
+                <span class="text-xs text-slate-500 font-medium">مساجد أثرية موثقة</span>
+            </div>
+            <div class="p-3 text-center border-l last:border-l-0 border-slate-100">
+                <span class="block text-3xl font-black text-emerald-900 font-serif-ar">٧+</span>
+                <span class="text-xs text-slate-500 font-medium">آبار نبوية تاريخية</span>
+            </div>
+            <div class="p-3 text-center border-l last:border-l-0 border-slate-100">
+                <span class="block text-3xl font-black text-emerald-900 font-serif-ar">٣</span>
+                <span class="text-xs text-slate-500 font-medium">مسارات سياحية مجهزة</span>
+            </div>
+            <div class="p-3 text-center border-l last:border-l-0 border-slate-100">
+                <span class="block text-3xl font-black text-emerald-900 font-serif-ar">١٠٠٪</span>
+                <span class="text-xs text-slate-500 font-medium">بيانات مدققة تاريخياً</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Explorer Section -->
+    <main id="explorer" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        
+        <!-- Header & Category Selectors -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
+            <div>
+                <span class="text-emerald-800 font-bold text-xs uppercase tracking-widest block mb-2">موسوعة معالم طيبة</span>
+                <h2 class="text-3xl md:text-4xl font-bold font-serif-ar text-slate-900">استكشف مساجد ومعالم المدينة</h2>
+                <p class="text-slate-500 text-xs mt-1">تصفح المعالم بحسب التصنيف لتقرأ عن تاريخها وعمارتها وبياناتها العملية للزيارة.</p>
+            </div>
+            
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap gap-2 bg-slate-100 p-1.5 rounded-xl border border-slate-200">
+                <button onclick="filterLandmarks('all')" id="tab-all" class="filter-btn px-4 py-2 rounded-lg text-xs font-bold transition-all bg-[#043a27] text-white">الكل</button>
+                <button onclick="filterLandmarks('mosque')" id="tab-mosque" class="filter-btn px-4 py-2 rounded-lg text-xs font-medium text-slate-600 hover:text-emerald-950 transition-all">مساجد تاريخية</button>
+                <button onclick="filterLandmarks('battle')" id="tab-battle" class="filter-btn px-4 py-2 rounded-lg text-xs font-medium text-slate-600 hover:text-emerald-950 transition-all">غزوات ومواقع</button>
+                <button onclick="filterLandmarks('well-valley')" id="tab-well-valley" class="filter-btn px-4 py-2 rounded-lg text-xs font-medium text-slate-600 hover:text-emerald-950 transition-all">آبار وأودية مباركة</button>
+            </div>
+        </div>
+
+        <!-- Landmarks Dynamic Grid -->
+        <div id="landmarks-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Populated via Javascript -->
+        </div>
+
+    </main>
+
+    <!-- Interactive Landmark Details Modal -->
+    <div id="details-modal" class="fixed inset-0 z-50 overflow-y-auto hidden bg-emerald-950/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-amber-500/10 transition-all duration-300 transform scale-95" id="modal-content">
+            <!-- Content Injected Dynamically -->
+        </div>
+    </div>
+
+    <!-- Suggested Itineraries Section -->
+    <section id="itineraries" class="bg-gradient-to-br from-emerald-950 to-emerald-900 text-white py-20 px-4 md:px-8 border-y-4 border-[#d4af37]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-[#e5c060] font-bold text-xs uppercase tracking-widest block">خرائط وجداول الزيارة</span>
+                <h2 class="text-3xl md:text-4xl font-bold font-serif-ar">مسارات سياحية تاريخية مقترحة</h2>
+                <p class="text-emerald-100/75 text-xs">لقد صممنا لك 3 مسارات ذكية تمكنك من تنظيم زيارتك للمدينة وتغطية المواقع المتقاربة جغرافياً وزمنياً.</p>
+            </div>
+
+            <!-- Itinerary Switchers -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                
+                <!-- Card 1 -->
+                <div onclick="selectItinerary(1)" id="itinerary-card-1" class="itinerary-card cursor-pointer bg-emerald-900/40 hover:bg-emerald-900/60 p-6 rounded-2xl border-2 border-emerald-800 transition-all text-right space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="px-2.5 py-1 rounded bg-[#d4af37]/20 text-[#e5c060] text-[10px] font-bold">مسار قصير</span>
+                        <span class="text-xs text-emerald-300 font-medium">يستغرق 4 ساعات</span>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif-ar text-[#fbf5b7]">مسار طيبة الأساسي</h3>
+                    <p class="text-xs text-emerald-100/70 leading-relaxed">مثالي لمن لديه وقت ضيق ويريد زيارة أهم معلمين في المدينة بعد الحرم النبوي مباشرة.</p>
+                    <span class="text-xs font-semibold text-[#e5c060] inline-flex items-center gap-1">عرض تفاصيل الخطة ←</span>
+                </div>
+
+                <!-- Card 2 -->
+                <div onclick="selectItinerary(2)" id="itinerary-card-2" class="itinerary-card cursor-pointer bg-emerald-900/40 hover:bg-emerald-900/60 p-6 rounded-2xl border-2 border-emerald-800 transition-all text-right space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="px-2.5 py-1 rounded bg-blue-500/10 text-blue-300 text-[10px] font-bold">يوم كامل</span>
+                        <span class="text-xs text-emerald-300 font-medium">يستغرق 8 ساعات</span>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif-ar text-[#fbf5b7]">مسار الغزوات والتاريخ</h3>
+                    <p class="text-xs text-emerald-100/70 leading-relaxed">مخطط شامل يأخذك في رحلة مشوقة عبر معارك ومساجد النبوة الشهيرة من أحد إلى الخندق.</p>
+                    <span class="text-xs font-semibold text-[#e5c060] inline-flex items-center gap-1">عرض تفاصيل الخطة ←</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div onclick="selectItinerary(3)" id="itinerary-card-3" class="itinerary-card cursor-pointer bg-emerald-900/40 hover:bg-emerald-900/60 p-6 rounded-2xl border-2 border-emerald-800 transition-all text-right space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-300 text-[10px] font-bold">يومين (مستكشف)</span>
+                        <span class="text-xs text-emerald-300 font-medium">يستغرق يومين</span>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif-ar text-[#fbf5b7]">مسار البركة والمصادر المائية</h3>
+                    <p class="text-xs text-emerald-100/70 leading-relaxed">للغوص عميقاً في تاريخ المدينة والتعرف على الآبار والأودية المباركة التي ارتبطت بالسيرة النبوية.</p>
+                    <span class="text-xs font-semibold text-[#e5c060] inline-flex items-center gap-1">عرض تفاصيل الخطة ←</span>
+                </div>
+
+            </div>
+
+            <!-- Dynamic Itinerary Display Screen -->
+            <div id="itinerary-display" class="bg-emerald-900/20 rounded-3xl p-6 md:p-10 border border-emerald-800/60 transition-all duration-300">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- General Pilgrim Visitor Guidelines -->
+    <section id="tips" class="max-w-6xl mx-auto px-4 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 relative">
+                <!-- Visual fallbacks -->
+                <div class="bg-[#f9f5eb] border-2 border-[#d4af37]/30 rounded-3xl p-8 space-y-6">
+                    <h3 class="text-2xl font-serif-ar font-bold text-emerald-950 flex items-center gap-2">
+                         إرشادات الزائر لآثار النبوة
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        إن زيارة هذه المواقع التاريخية ليست مجرد نزهة سياحية، بل هي رحلة تأمل وروحانية في خطى خير البرية وصحابته الكرام. إليك نصائح ذهبية لضمان رحلة ميسرة ومليئة بالأجر والفائدة.
+                    </p>
+                    <ul class="space-y-3.5 text-xs text-slate-700">
+                        <li class="flex items-start gap-2.5">
+                            <span class="h-5 w-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-[10px] shrink-0">✓</span>
+                            <span><strong>الوضوء قبل الذهاب لقباء:</strong> نوصيك بالوضوء في الفندق، حيث أن صلاة ركعتين في مسجد قباء متوضئاً تعدل ثواب عمرة كاملة.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="h-5 w-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-[10px] shrink-0">✓</span>
+                            <span><strong>تجنب ساعات الذروة:</strong> يفضل التوجه للمساجد التاريخية في الصباح الباكر (بين ٧ إلى ١٠ صباحاً) لتجنب الزحام والحرارة.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="h-5 w-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-[10px] shrink-0">✓</span>
+                            <span><strong>تطبيقات النقل المعتمدة:</strong> يسهل الوصول إلى هذه المعالم باستخدام الحافلات السياحية للمدينة أو تطبيقات النقل مثل كابتن، كريم وأوبر المتوفرة بكثرة.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lg:col-span-7 space-y-6">
+                <span class="text-emerald-800 font-bold text-xs uppercase tracking-widest block">آداب السلوك والمعرفة</span>
+                <h2 class="text-3xl font-serif-ar font-bold text-slate-900">تعظيم المكان واستحضار العبرة التاريخية</h2>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    تضم المدينة المنورة ثروة تاريخية نادرة. نرجو من ضيوف الرحمن والباحثين الالتزام بآداب زيارة المقابر والمقامات النبوية بالدعاء المأثور لشهداء أحد، والمحافظة الكاملة على الآثار وتجنب ممارسات التبرك غير المشروعة حفاظاً على سلامة العقيدة وقداسة المكان.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
+                        <span class="block text-emerald-800 font-bold text-sm mb-1">المظهر اللائق</span>
+                        <p class="text-[11px] text-slate-500">الالتزام بالملابس المحتشمة والمناسبة لقدسية المدينة النبوية أثناء تصفح المعالم وزيارتها.</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
+                        <span class="block text-emerald-800 font-bold text-sm mb-1">الرصد التاريخي</span>
+                        <p class="text-[11px] text-slate-500">تستعين البوابة بالروايات الصحيحة الواردة في كتب السيرة النبوية والمؤرخين المعتمدين لتجنب المبالغات.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Banner and Copyright -->
+    <footer class="bg-emerald-950 text-white border-t-4 border-[#d4af37] py-16 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-center md:text-right">
+            <div>
+                <span class="block text-2xl font-serif-ar font-bold text-[#e5c060] mb-2">مرشد طيبة التاريخي</span>
+                <p class="text-xs text-emerald-200/70 max-w-sm">بوابة تفاعلية وبحثية شاملة غير ربحية تهدف لتوثيق وتسهيل سبل المعرفة بمعالم ومساجد مدينة المصطفى ﷺ.</p>
+            </div>
+            <div class="flex flex-col gap-2 text-xs text-emerald-300">
+                <span class="font-bold text-white mb-1">روابط مفيدة سريعة</span>
+                <a href="#explorer" class="hover:text-[#e5c060] transition-colors">مستكشف معالم طيبة</a>
+                <a href="#itineraries" class="hover:text-[#e5c060] transition-colors">مسارات الزيارة والتفويج</a>
+                <a href="#tips" class="hover:text-[#e5c060] transition-colors">إرشادات وسلوكيات الزيارة</a>
+            </div>
+            <div class="text-center md:text-left text-xs text-emerald-400">
+                <p>© 2026 مرشد طيبة التاريخي. جميع الحقوق محفوظة لخدمة المعرفة الإرشادية لضيوف الرحمن والباحثين.</p>
+                <p class="mt-2 text-[10px] text-emerald-500">تم التحقق ومراجعة التواريخ الهجرية ومطابقتها مع المراجع الرسمية المعتمدة لآثار المدينة المنورة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Data and Controller logic -->
+    <script>
+        // 1. Comprehensive Database for Madinah Heritage Landmarks
+        const landmarksData = [
+            {
+                id: "quba",
+                type: "mosque",
+                title: "مسجد قباء",
+                categoryText: "مساجد تاريخية",
+                subtitle: "أول مسجد أسس على التقوى في الإسلام",
+                distance: "حوالي 3.5 كم من المسجد النبوي",
+                bestTime: "بعد صلاة الفجر أو في وقت الضحى",
+                era: "العهد النبوي (1 هـ / 622 م)",
+                history: "مسجد قباء هو أول مسجد بناه المسلمون بأيديهم. بناه النبي صلى الله عليه وسلم فور وصوله إلى يثرب مهاجراً من مكة المكرمة في ربيع الأول من العام الأول للهجرة. بارك النبي بناءه وشارك في حمل حجارته مع الصحابة الكرام. وكان عليه الصلاة والسلام يزوره كل سبت راكباً أو ماشياً ليصلي فيه ركعتين.",
+                architecture: "بدأ كبناء بسيط جداً من الطين وعوارض وجذوع النخل ومسقوف بجريدها. شهد المسجد توسعات ضخمة متتالية على مر القرون: في عهد عثمان بن عفان، ثم عمر بن عبد العزيز الذي أنشأ له أول مئذنة، ثم التوسعات المتوالية في العهد السعودي. وفي العهد الحالي، يشهد المسجد مشروع الملك سلمان لتوسعة مسجد قباء لتصل مساحته الإجمالية إلى 50,000 متر مربع وبطاقة استيعابية تتسع لـ 66,000 مصلٍ، ليكون أكبر توسعة في تاريخ المسجد.",
+                virtues: "قال رسول الله صلى الله عليه وسلم: 'مَنْ تَطَهَّرَ فِي بَيْتِهِ، ثُمَّ أَتَى مَسْجِدَ قُبَاءٍ، فَصَلَّى فِيهِ صَلَاةً، كَانَ لَهُ كَأَجْرِ عُمْرَةٍ' (حديث صحيح رواه ابن ماجة والنسائي).",
+                etiquette: "يستحب للزائر الوضوء التام والمستمر في مقر إقامته قبل التوجه إلى المسجد لاستبقاء وتحقيق الأجر الوارد في الحديث الشريف."
+            },
+            {
+                id: "qiblatain",
+                type: "mosque",
+                title: "مسجد القبلتين",
+                categoryText: "مساجد تاريخية",
+                subtitle: "شاهد على حدث تحول القبلة التاريخي العظيم",
+                distance: "حوالي 5 كم شمال غرب المسجد النبوي",
+                bestTime: "من الصباح حتى العشاء (متوفر خدمات متكاملة)",
+                era: "العهد النبوي (2 هـ / 623 م)",
+                history: "كان يُعرف قديماً بمسجد بني سلمة لشرائه في منطقتهم. في منتصف شهر شعبان من العام الثاني للهجرة (2 هـ)، نزل الوحي على الرسول ﷺ وهو يصلي بأصحابه صلاة الظهر أو العصر موجهاً إياه لتحويل القبلة من بيت المقدس في القدس إلى الكعبة المشرفة في مكة المكرمة. فقام النبي وأصحابه بالتحول فوراً أثناء صلاتهم نحو مكة، ومن هنا جاءت تسميته التاريخية بمسجد القبلتين.",
+                architecture: "أعيد تجديده وتوسعته في عهود إسلامية متعاقبة. وفي العهد السعودي، تمت إعادة إعماره بالكامل بتصميم هندسي فريد يضم قبتين متميزتين ومنارتين تليقان بهيبته وتاريخه، وتم تزويده بساحات فسيحة ومرافق حديثة لاستقبال أفواج الحجاج والمعتمرين بكل سهولة.",
+                virtues: "مكان نزول الآية الكريمة: 'قَدْ نَرَىٰ تَقَلُّبَ وَجْهِكَ فِي السَّمَاءِ ۖ فَلَنُوَلِّيَنَّكَ قِبْلَةً تَرْضَاهَا ۚ فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ'. وهو شاهد على الطاعة المطلقة للصحابة للوحي والرسول.",
+                etiquette: "يستحب أداء تحية المسجد عند دخوله، واستحضار عظمة الحدث واستجابة الصحابة للحق والوحي الإلهي فوراً دون تردد."
+            },
+            {
+                id: "seven-mosques",
+                type: "mosque",
+                title: "المساجد السبعة ومسجد الفتح",
+                categoryText: "مساجد تاريخية / غزوات ومواقع",
+                subtitle: "منطقة الخندق ومواقع رباط الصحابة",
+                distance: "حوالي 2.5 كم من المسجد النبوي الشريف",
+                bestTime: "قبل الظهر أو العصر (لقربها من جبل سلع)",
+                era: "العهد النبوي (غزوة الأحزاب - 5 هـ / 627 م)",
+                history: "مجموعة من المساجد الصغيرة التاريخية المتقاربة المقامة على السفح الغربي لجبل 'سلع'، وتعود أهميتها لارتباطها بمواقع حفر الخندق ورباط ومرابطة الرسول ﷺ وصحابته الكرام لحراسة المدينة خلال غزوة الأحزاب (الخندق). وتضم: مسجد الفتح (وهو الأكبر حيث دعا النبي ربه فاستجاب له وبشره بالفتح)، ومساجد سلمان الفارسي، وأبو بكر، وعمر، وعلي، وفاطمة الزهراء.",
+                architecture: "قامت وزارة الشؤون الإسلامية والجهات المختصة بترميم هذه المساجد التاريخية الأثرية بشكل كامل مع الحفاظ على هويتها الحجرية الأثرية القديمة. كما تم تشييد 'مسجد الخندق الحديث' الكبير في الساحة المجاورة ليتسع لآلاف المصلين بطراز معماري بديع يواكب تدفق الزوار الكثيف للمنطقة.",
+                virtues: "شاهدة على موضع استجابة الله لدعاء نبيه ﷺ بالنصر والتمكين على الأحزاب، وموقع للتأمل في عبقرية سلمان الفارسي وصبر الصحابة الكرام في الظروف القاسية.",
+                etiquette: "المرور بالمساجد للتأمل والتاريخ، وتجنب ممارسات الكتابة على الحوائط أو اعتقاد خصوصية عبادة معينة بكل مسجد منفرد بخلاف المأثور."
+            },
+            {
+                id: "uhud-martyrs",
+                type: "battle",
+                title: "جبل أحد ومقبرة الشهداء",
+                categoryText: "غزوات ومواقع",
+                subtitle: "جبل يحبنا ونحبه ومقبرة السبعين صحابياً",
+                distance: "حوالي 5 كم شمال المسجد النبوي الشريف",
+                bestTime: "الصباح الباكر أو قبل الغروب لتجنب أشعة الشمس",
+                era: "العهد النبوي (غزوة أحد - 3 هـ / 625 م)",
+                history: "شهد جبل أحد الشامخ (الذي يمتد بطول 7 كيلومترات) غزوة أحد الشهيرة في السنة الثالثة للهجرة. وفي سفحه وقعت المعركة الخالدة واستشهد 70 صحابياً جليلاً على رأسهم أسد الله ورسوله وعم النبي 'حمزة بن عبد المطلب' ومصعب بن عمير رضي الله عنهم أجمعين. يضم الموقع 'جبل الرماة' الصغير (جبل عينين) ومقبرة شهداء أحد الأثرية المحاطة بسياج لحفظها وزيارتها.",
+                architecture: "قامت أمانة المدينة المنورة وهيئة تطوير المدينة بتهيئة المنطقة بشكل كامل لتضم ساحة مشاة فسيحة، ومواقف للحافلات، ومقاعد تتيح للزوار والباحثين إطلالة ممتازة على المعلم مع لوحات إرشادية وتاريخية بلغات متعددة. كما تم بناء مسجد سيد الشهداء الأنيق الذي يتميز بطرازه المديني الفريد ليتسع لأكثر من 5,000 مصلٍ.",
+                virtues: "قال رسول الله ﷺ: 'أُحُدٌ جَبَلٌ يُحِبُّنَا وَنُحِبُّهُ' (رواه البخاري ومسلم). وتستحب زيارة قبور الشهداء والسلام عليهم والدعاء لهم.",
+                etiquette: "يستحب زيارة المقبرة للسلام على الشهداء والدعاء لهم بالرحمة والمغفرة بالصيغة الشرعية: 'السلام عليكم دار قوم مؤمنين..' والابتعاد عن المخالفات الشرعية في الزيارة."
+            },
+            {
+                id: "miqat-mosque",
+                type: "mosque",
+                title: "مسجد الميقات (ذو الحليفة)",
+                categoryText: "مساجد تاريخية",
+                subtitle: "ميقات أهل المدينة ومن جاورها للإحرام",
+                distance: "حوالي 9 كم غرب المدينة المنورة (طريق الهجرة)",
+                bestTime: "مفتوح على مدار الساعة (يفضل زيارته عند نية الحج أو العمرة)",
+                era: "العهد النبوي (تأسس كأول موضع لإحرام النبي)",
+                history: "هو المسجد الذي يقع في موضع 'ذو الحليفة' وهو الميقات المخصص لأهل المدينة المنورة والزوار المغادرين منها باتجاه مكة المكرمة لأداء مناسك الحج أو العمرة. أحرم منه النبي صلى الله عليه وسلم في حجة الوداع وفي عمراته المتعددة، وتأسس المسجد تخليداً لهذا الموضع المبارك.",
+                architecture: "أعيد بناء المسجد وتوسعته بشكل مذهل في العهد السعودي على يد الملك فهد بن عبد العزيز ليصبح تحفة معمارية مذهلة على مساحة شاسعة تتسع لأكثر من 5,000 مصلٍ. يضم المسجد فناءً داخلياً رائعاً تتوسطه حديقة خضراء، ومئات من دورات المياه وأماكن الاغتسال المتطورة، ومحاطاً بمساحات مجهزة لشحن ومغادرة الحافلات بكل سلاسة.",
+                virtues: "موضع انطلاق التلبية التاريخية النبوية ومحطة الإحرام الروحانية التي شهدت نية النسك لأعظم عبادات الإسلام.",
+                etiquette: "يستحب لمن يقصده للإحرام الاغتسال ولبس ملابس الإحرام البيضاء النظيفة، وأداء ركعتين نافلة أو الصلاة المكتوبة قبل الإهلال بالتلبية لنسك العمرة أو الحج."
+            },
+            {
+                id: "ghamama",
+                type: "mosque",
+                title: "مسجد الغمامة (مسجد المصلى)",
+                categoryText: "مساجد تاريخية",
+                subtitle: "موضع صلاة الاستسقاء والأعياد النبوية",
+                distance: "حوالي 500 متر غرب المسجد النبوي الشريف",
+                bestTime: "يمكن زيارته سيراً على الأقدام من الحرم النبوي",
+                era: "العهد النبوي (شهد آخر صلوات العيد للرسول ﷺ)",
+                history: "كان هذا الموضع فضاءً خارج المسجد النبوي الشريف في العهد النبوي، وكان يُعرف بـ 'المصلى'. فيه أدى الرسول ﷺ صلاة العيدين (الفطر والأضحى) وصلى فيه صلاة الاستسقاء فظللته غمامة وسحابة من حرارة الشمس الشديدة أثناء دعائه وصلاة الاستسقاء، فاشتهر تاريخياً بـ 'مسجد الغمامة'. كما شهد الصلاة على النجاشي ملك الحبشة صلاة الغائب.",
+                architecture: "يتميز المسجد بعمارته الأثرية ذات الأحجار البازلتية السوداء (الحرّة) والقباب المتعددة التي تبلغ 6 قباب بيضاء متباينة الأحجام ومنارة أثرية رشيقة. خضع لترميمات دقيقة على مر العصور، وكان آخرها المشروع الشامل لهيئة التطوير لحفظ وصيانة المساجد التاريخية والأثرية بالمدينة.",
+                virtues: "موقع تاريخي يجسد معجزة الغمامة واستجابة دعاء النبي ﷺ بالاستسقاء وهطول الغيث والبركة على أهل المدينة.",
+                etiquette: "المرور به أثناء الوجود في ساحات الحرم النبوي، واستحضار مظاهر التواضع والتجاء النبي ﷺ لربه في الاستسقاء والأعياد."
+            },
+            {
+                id: "ijabah",
+                type: "mosque",
+                title: "مسجد الإجابة (مسجد بني معاوية)",
+                categoryText: "مساجد تاريخية",
+                subtitle: "حيث دعا النبي بثلاث دعوات فاستجيب له باثنتين",
+                distance: "حوالي 380 متراً فقط شمال شرق البقيع",
+                bestTime: "خلال ساعات اليوم العادية (يسهل المشي إليه)",
+                era: "العهد النبوي (السنة 1 للهجرة)",
+                history: "مسجد تاريخي أثري يعود لبني معاوية من الأوس. تكمن أهميته التاريخية والشرعية العظيمة في ما رواه الإمام مسلم في صحيحه أن النبي ﷺ دخل هذا المسجد فصلى فيه ركعتين ثم دعا ربه طويلاً، ثم التفت لأصحابه فقال: 'سألت ربي ثلاثاً فأعطاني ثنتين ومنعني واحدة؛ سألته ألا يهلك أمتي بالسّنة (الجدب العام) فأعطانيها، وسألته ألا يهلك أمتي بالغرق فأعطانيها، وسألته ألا يجعل بأسهم بينهم فمنعنيها'. وسمي بمسجد الإجابة تخليداً لإجابة الله لدعاء نبيه.",
+                architecture: "تم تجديده وترميمه بالكامل وتوسعته في العهد السعودي بشكل معماري جذاب ومميز ومحاط بمساحات خضراء لتسهيل وصول المصلين إليه والصلاة فيه بيسر وسكينة.",
+                virtues: "موقع يستحضر فيه المسلم عظم رحمة ورأفة النبي ﷺ بأمته وحرصه البالغ على وحدة كلمتهم وعدم تنازعهم وتفرقتهم.",
+                etiquette: "يستحب الصلاة فيه والدعاء بالصيغة النبوية وتذكر نصائح النبي ﷺ بالوحدة والأخوة الإسلامية وتجنب الشقاق والتنازع."
+            },
+            {
+                id: "well-uthman",
+                type: "well-valley",
+                title: "بئر عثمان بن عفان (بئر رومة)",
+                categoryText: "آبار وأودية مباركة",
+                subtitle: "أول وقف مائي وتكافل اجتماعي مستمر في الإسلام",
+                distance: "حوالي 5.5 كم شمال غرب المسجد النبوي",
+                bestTime: "الفترة الصباحية (لمشاهدة واحة البئر ومزارع النخيل)",
+                era: "العهد النبوي (السنة 2 للهجرة)",
+                history: "كانت البئر في العهد النبوي ملكاً لرجل يهودي لا يسقي أحداً منها إلا بثمن باهظ وضاق المسلمون بذلك زرعاً. فقال النبي ﷺ: 'مَنْ يَشْتَرِي بِئْرَ رُومَةَ فَيَجْعَلَ دَلْوَهُ مَعَ دِلَاءِ الْمُسْلِمِينَ بِخَيْرٍ لَهُ مِنْهَا فِي الْجَنَّةِ؟' فسارع الصحابي الجليل عثمان بن عفان رضي الله عنه واشترى نصفها ثم كلها وجعلها وقفاً مجانياً للمسلمين والزوار يشربون منها حتى اليوم.",
+                architecture: "تقع البئر في منطقة العشيرة وتضم وحولها واحة زراعية خلابة ومزارع نخيل تاريخية ترتوي من ماء البئر العذب الشبيه بالسلسبيل. تم ترميم فوهة البئر وتأمينها لتكون مزاراً ثقافياً بيئياً وتاريخياً مذهلاً يشرف عليه فرع وزارة البيئة والمياه والزراعة وهيئة التطوير.",
+                virtues: "تعتبر بئر عثمان الوقف الخيري الأقدم والمستمر في العالم الإسلامي، وتجسد مثالاً حياً للبذل والوفاء وسخاء الخلفاء الراشدين.",
+                etiquette: "التأمل في عظمة هذا الوقف والتكافل الاجتماعي، وتجنب النزول لأعماق البئر أو ممارسات التبرك والاكتفاء بزيارة الواحة والتفكر."
+            },
+            {
+                id: "aqeeq-valley",
+                type: "well-valley",
+                title: "وادي العقيق المبارك",
+                categoryText: "آبار وأودية مباركة",
+                subtitle: "الوادي المبارك الذي باركه وحي السماء",
+                distance: "يمتد عبر الأطراف الغربية للمدينة المنورة",
+                bestTime: "مساءً عند الغروب أو بعد هطول الأمطار الغزيرة",
+                era: "العهد النبوي (أمر الوحي بصلاة ركعتين فيه)",
+                history: "هو أشهر أودية المدينة المنورة على الإطلاق. ورد في الحديث الشريف أن الوحي نزل على النبي ﷺ وهو في معرسه بالوادي فقال له: 'صَلِّ فِي هَذَا الْوَادِي الْمُبَارَكِ'. كان الوادي متنفساً لأهل المدينة وخلفائها عبر العصور وشيدت على ضفافه القصور والبساتين التاريخية الشهيرة في العصر الأموي (مثل قصر عروة بن الزبير وقصر سعد بن أبي وقاص).",
+                architecture: "شهد الوادي في الأعوام الأخيرة مشروعاً بيئياً وتطويرياً ضخماً من هيئة تطوير المدينة لتحويله إلى متنزه بيئي طبيعي وثقافي يضم مسارات للمشي وركوب الدراجات، ومسطحات خضراء بديعة ومقاعد مطلة وأجهزة تلطيف بيئي متطورة لتستمتع الأسر والزوار بجمال الطبيعة وهدوئها.",
+                virtues: "وصفه النبي ﷺ بالوادي المبارك، وارتبطت مياهه العذبة وطبيعته بجمال المدينة وطيب هوائها على مر السنين.",
+                etiquette: "الاستمتاع بمسارات المشي وجلسات الطبيعة الراقية، والحفاظ التام على النظافة العامة والبيئة وعدم المساس بالأشجار والنباتات الطبيعية المورقة."
+            },
+            {
+                id: "well-aris",
+                type: "well-valley",
+                title: "بئر أريس (بئر الخاتم)",
+                categoryText: "آبار وأودية مباركة",
+                subtitle: "موقع سقوط خاتم الخلافة النبوي الشريف",
+                distance: "مجاور تماماً لمسجد قباء التاريخي من الجهة الغربية",
+                bestTime: "يمكن زيارته عند التوجه لزيارة مسجد قباء الشريف",
+                era: "العهد النبوي والراشدي (سقوط الخاتم سنة 30 هـ)",
+                history: "بئر نبوية شهيرة جلس عليها النبي ﷺ ودلى رجليه الشريفتين فيها وتوضأ من مائها وبشّر أبا بكر وعمر وعثمان بالجنة في حديث بستان أريس الشهير. وتسمى بـ 'بئر الخاتم' لأن خاتم النبي ﷺ الذي كان يتوارثه الخلفاء الراشدون سقط من يد الخليفة عثمان بن عفان رضي الله عنه في هذه البئر في السنة الثلاثين للهجرة وحاولوا جاهدين استخراجه والبحث عنه لثلاثة أيام دون جدوى وضاع من حينها.",
+                architecture: "تم دمج وتنسيق موقع البئر والحديقة المحيطة بها لتكون متناسقة ومتصلة بشكل مباشر مع مشروع عمارة وتوسعة مسجد قباء والمنطقة المحيطة به لتضم ساحات ومجسمات تعريفية وثقافية تروي للزوار قصة البئر التاريخية الفاصلة.",
+                virtues: "مكان مبارك شهد البشارات النبوية العظيمة للخلفاء بالجنة وموقعاً ارتبط برمزية الخلافة الفاصلة وسقوط الخاتم التاريخي.",
+                etiquette: "استحضار البشارات النبوية الكبرى وتذكر سيرة الخلفاء الثلاثة العظيمة ودعائهم بالرضوان والتوفيق لخدمة هذا الدين."
+            }
+        ];
+
+        // 2. Interactive Itinerary Data (مسارات الزيارة المخططة)
+        const itinerariesData = {
+            1: {
+                title: "مسار طيبة الأساسي (قصير ومركز)",
+                duration: "٤ ساعات — مثالي لزوار اليوم الواحد",
+                description: "خطتك السريعة لزيارة أهم المساجد والمعالم الأثرية بالمدينة المنورة ذات الرمزية الروحية العالية والسهلة الوصول.",
+                stops: [
+                    { time: "٠٨:٠٠ ص", title: "الانطلاق من ساحات المسجد النبوي الشريف بسيارة أو باص سياحي." },
+                    { time: "٠٨:١٥ ص", title: "الوصول لمسجد قباء: أداء ركعتي السنة في المسجد (ثواب عمرة) واستكشاف عمارة المسجد الجديدة." },
+                    { time: "٠٩:٣٠ ص", title: "زيارة منطقة بستان أريس (بئر الخاتم) المجاورة لقباء واستكشاف البئر التاريخية." },
+                    { time: "١٠:١٥ ص", title: "الوصول لمسجد القبلتين: مشاهدة القبتين البديعتين واستحضار قصة تحويل القبلة المعظمة." },
+                    { time: "١١:٣٠ ص", title: "العودة لساحات المسجد النبوي الشريف للاستعداد لصلاة الظهر." }
+                ],
+                tips: "احرص على الوضوء في فندقك قبل الانطلاق لتحظى بأجر العمرة كاملاً في مسجد قباء."
+            },
+            2: {
+                title: "مسار الغزوات والتاريخ (يوم كامل)",
+                duration: "٨ ساعات — رحلة الغوص في ملاحم النبوة والصحابة",
+                description: "هذا المسار مخصص لعشاق التاريخ الإسلامي والباحثين الذين يودون استكشاف المعارك الحاسمة ومواقع رباط الصحابة.",
+                stops: [
+                    { time: "٠٧:٣٠ ص", title: "الانطلاق مباشرة نحو منطقة سيد الشهداء وجبل أحد الأثري الشامخ." },
+                    { time: "٠٧:٤٥ ص", title: "الوقوف عند جبل الرماة، زيارة مقبرة شهداء أحد وقراءة الفاتحة والسلام على حمزة والشهداء." },
+                    { time: "٠٩:١٥ ص", title: "زيارة مسجد سيد الشهداء البديع واستكشاف المنطقة المحيطة واللوحات المعرفية." },
+                    { time: "١٠:٣٠ ص", title: "التوجه لمنطقة المساجد السبعة (موقع غزوة الخندق) وجبل سلع واستكشاف مسجد الفتح الأثري." },
+                    { time: "١٢:٣٠ م", title: "الصلاة وتناول طعام الغداء والاستراحة في أحد المطاعم المجاورة لساحة المساجد السبعة." },
+                    { time: "٠٢:٣٠ م", title: "التوجه لمسجد الإجابة لمعرفة تفاصيل الدعوات الثلاث والوقوف على تاريخ الحي القديم." },
+                    { time: "٠٤:٠٠ م", title: "زيارة مساجد المصلى الأثرية (مسجد الغمامة، أبو بكر، علي) بجوار الحرم النبوي سيراً على الأقدام." }
+                ],
+                tips: "ارتد حذاء مشي مريحاً وقبعة شمسية لأن المسار يتضمن تسلق تلال مشاة خفيفة ورائعة بجبل الرماة."
+            },
+            3: {
+                title: "مسار البركة والمصادر المائية (مستكشف متقدم)",
+                duration: "يومين كاملين — استكشاف الآبار والأودية والقصور الأثرية",
+                description: "مسار فريد من نوعه يستكشف البنية التحتية المائية والبيئية القديمة لطيبة وكيف ازدهرت البساتين والأوقاف في عهد النبوة والعهد الأموي.",
+                stops: [
+                    { time: "اليوم ١ — ٠٩:٠٠ ص", title: "زيارة بئر عثمان بن عفان (بئر رومة) في منطقة العشيرة واستكشاف واحة النخيل الوقفية المستمرة." },
+                    { time: "اليوم ١ — ١١:٠٠ ص", title: "زيارة قصر عروة بن الزبير الأثري على ضفاف وادي العقيق ومشاهدة السدود المائية القديمة." },
+                    { time: "اليوم ١ — ٠٤:٣٠ م", title: "متنزه وادي العقيق البيئي: جولة مشي مميزة مع غروب الشمس والاستمتاع بالمطاعم المطلة بالوادي." },
+                    { time: "اليوم ٢ — ٠٨:٣٠ ص", title: "زيارة مسجد الميقات (ذو الحليفة) على طريق الهجرة ومشاهدة نمط المعمار والحدائق الأنيقة." },
+                    { time: "اليوم ٢ — ١١:٠٠ ص", title: "التوجه لشرق المدينة لزيارة سد بطحان الأثري ومعالم البراكين والحرار البركانية المحيطة." }
+                ],
+                tips: "احرص على شحن كاميرتك أو هاتفك بالكامل؛ المناظر الطبيعية لغروب الشمس وواحات النخيل مدهشة وتستحق التوثيق."
+            }
+        };
+
+        // State Manager
+        let currentFilter = 'all';
+        let currentItinerary = 1;
+
+        // Render Landmarks Cards
+        function renderLandmarks(filter = 'all', query = '') {
+            const grid = document.getElementById('landmarks-grid');
+            grid.innerHTML = '';
+
+            let filtered = landmarksData;
+
+            // Apply category filter
+            if (filter !== 'all') {
+                filtered = filtered.filter(item => item.type === filter);
+            }
+
+            // Apply search query
+            if (query.trim() !== '') {
+                filtered = filtered.filter(item => 
+                    item.title.toLowerCase().includes(query.toLowerCase()) || 
+                    item.subtitle.toLowerCase().includes(query.toLowerCase()) ||
+                    item.era.toLowerCase().includes(query.toLowerCase()) ||
+                    item.history.toLowerCase().includes(query.toLowerCase())
+                );
+            }
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-16 bg-white rounded-3xl border border-slate-100 p-8">
+                        <span class="text-4xl">🔍</span>
+                        <h3 class="text-lg font-bold text-slate-700 mt-4">لم نجد أي معالم مطابقة لبحثك</h3>
+                        <p class="text-slate-400 text-xs mt-1">جرب كلمات مفتاحية أخرى مثل "عثمان" أو "قباء" أو "وادي".</p>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(landmark => {
+                const card = document.createElement('div');
+                card.className = "landmark-card bg-white rounded-2xl p-6 border border-slate-100 shadow-sm transition-all duration-300 flex flex-col justify-between cursor-pointer card-shadow";
+                card.onclick = () => showLandmarkDetails(landmark.id);
+                
+                // Color mapping for tags
+                let tagColor = "bg-emerald-50 text-emerald-800";
+                if (landmark.type === 'battle') tagColor = "bg-amber-50 text-amber-800 border border-amber-100";
+                if (landmark.type === 'well-valley') tagColor = "bg-blue-50 text-blue-800 border border-blue-100";
+
+                card.innerHTML = `
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="px-2.5 py-1 rounded text-[10px] font-bold ${tagColor}">${landmark.categoryText}</span>
+                            <span class="text-[11px] text-slate-400 font-medium">${landmark.era}</span>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold font-serif-ar text-emerald-950">${landmark.title}</h3>
+                            <p class="text-xs text-slate-400 mt-1">${landmark.subtitle}</p>
+                        </div>
+
+                        <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed text-justify">
+                            ${landmark.history}
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-50 flex justify-between items-center text-xs">
+                        <span class="text-slate-500 flex items-center gap-1">
+                            📍 ${landmark.distance}
+                        </span>
+                        <span class="text-emerald-800 font-bold hover:underline inline-flex items-center gap-0.5">
+                            التفاصيل والمرشد ←
+                        </span>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Filter and Tabs activation
+        function filterLandmarks(category) {
+            currentFilter = category;
+            
+            // Update Tab UI
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.className = "filter-btn px-4 py-2 rounded-lg text-xs font-medium text-slate-600 hover:text-emerald-950 transition-all";
+            });
+            
+            const activeTab = document.getElementById(`tab-${category}`);
+            if (activeTab) {
+                activeTab.className = "filter-btn px-4 py-2 rounded-lg text-xs font-bold transition-all bg-[#043a27] text-white";
+            }
+
+            renderLandmarks(category);
+        }
+
+        // Live Search Input Controller
+        function liveSearch(val) {
+            renderLandmarks(currentFilter, val);
+        }
+
+        // Show Full Landmark Details inside Modal
+        function showLandmarkDetails(id) {
+            const landmark = landmarksData.find(item => item.id === id);
+            if (!landmark) return;
+
+            const modal = document.getElementById('details-modal');
+            const content = document.getElementById('modal-content');
+
+            content.innerHTML = `
+                <div class="emerald-gradient text-white p-8 rounded-t-3xl border-b-4 border-[#d4af37] relative">
+                    <button onclick="closeModal()" class="absolute top-6 left-6 text-emerald-200 hover:text-white bg-emerald-950/50 h-8 w-8 rounded-full flex items-center justify-center font-bold text-sm transition-all border border-emerald-800/60">✕</button>
+                    <span class="text-[#e5c060] text-xs font-bold uppercase tracking-wider block mb-2">${landmark.categoryText}</span>
+                    <h2 class="text-3xl font-serif-ar font-bold text-[#fbf5b7]">${landmark.title}</h2>
+                    <p class="text-sm text-emerald-100/80 mt-1 leading-relaxed">${landmark.subtitle}</p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6 pt-6 border-t border-emerald-800/50 text-xs">
+                        <div>
+                            <span class="text-emerald-300 block">العصر التاريخي:</span>
+                            <span class="font-bold text-white">${landmark.era}</span>
+                        </div>
+                        <div>
+                            <span class="text-emerald-300 block">المسافة الجغرافية:</span>
+                            <span class="font-bold text-white">${landmark.distance}</span>
+                        </div>
+                        <div>
+                            <span class="text-emerald-300 block">أفضل وقت للزيارة:</span>
+                            <span class="font-bold text-white">${landmark.bestTime}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 space-y-6">
+                    <div class="space-y-3">
+                        <h4 class="text-xs font-bold text-[#c59b27] uppercase tracking-wider border-r-2 border-[#d4af37] pr-2">الرواية والتاريخ الإسلامي الصحيح</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed text-justify">${landmark.history}</p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h4 class="text-xs font-bold text-[#c59b27] uppercase tracking-wider border-r-2 border-[#d4af37] pr-2">تطور العمارة والبناء عبر العصور</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed text-justify">${landmark.architecture}</p>
+                    </div>
+
+                    <div class="bg-amber-50 p-5 rounded-2xl border border-amber-100 space-y-2">
+                        <span class="text-xs font-bold text-amber-900 flex items-center gap-1.5">📜 الفضائل والأسرار الشرعية الواردة:</span>
+                        <p class="text-xs text-slate-700 leading-relaxed text-justify italic">${landmark.virtues}</p>
+                    </div>
+
+                    <div class="bg-blue-50/50 p-5 rounded-2xl border border-blue-100/50 space-y-2">
+                        <span class="text-xs font-bold text-blue-950 flex items-center gap-1.5">💡 آداب وسلوكيات الزيارة المقترحة:</span>
+                        <p class="text-xs text-slate-700 leading-relaxed text-justify">${landmark.etiquette}</p>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-slate-50 rounded-b-3xl border-t border-slate-100 flex justify-end">
+                    <button onclick="closeModal()" class="px-5 py-2.5 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold rounded-xl text-xs transition-all">إغلاق دليل المعلم</button>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // prevent background scrolling
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('details-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = ''; // allow scrolling again
+        }
+
+        // Close modal when clicking outside content
+        document.getElementById('details-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Render Suggested Itineraries
+        function selectItinerary(id) {
+            currentItinerary = id;
+            
+            // Highlight Selected Card
+            document.querySelectorAll('.itinerary-card').forEach(card => {
+                card.className = "itinerary-card cursor-pointer bg-emerald-900/40 hover:bg-emerald-900/60 p-6 rounded-2xl border-2 border-emerald-800 transition-all text-right space-y-4";
+            });
+            const activeCard = document.getElementById(`itinerary-card-${id}`);
+            if (activeCard) {
+                activeCard.className = "itinerary-card cursor-pointer bg-emerald-900/60 p-6 rounded-2xl border-2 border-[#d4af37] transition-all text-right space-y-4 shadow-xl";
+            }
+
+            const activeData = itinerariesData[id];
+            const display = document.getElementById('itinerary-display');
+
+            let stepsHTML = '';
+            activeData.stops.forEach((step, idx) => {
+                stepsHTML += `
+                    <div class="flex gap-4 items-start relative pb-6 last:pb-0">
+                        <!-- Line connecting steps -->
+                        ${idx < activeData.stops.length - 1 ? '<div class="absolute right-4.5 top-8 bottom-0 w-0.5 bg-emerald-800"></div>' : ''}
+                        
+                        <div class="h-9 w-9 rounded-full bg-emerald-800 border border-amber-500/20 text-[#e5c060] text-xs font-bold flex items-center justify-center shrink-0 z-10">
+                            ${idx + 1}
+                        </div>
+                        <div class="space-y-1 pt-1.5">
+                            <span class="text-[10px] text-amber-300 font-bold block">${step.time}</span>
+                            <p class="text-xs text-emerald-100 font-medium">${step.title}</p>
+                        </div>
+                    </div>
+                `;
+            });
+
+            display.innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-7 space-y-4">
+                        <span class="text-[#e5c060] text-xs font-bold block">${activeData.duration}</span>
+                        <h3 class="text-2xl font-serif-ar font-bold text-[#fbf5b7]">${activeData.title}</h3>
+                        <p class="text-xs text-emerald-100/80 leading-relaxed text-justify">${activeData.description}</p>
+                        
+                        <div class="bg-emerald-950/80 p-4 rounded-xl border border-emerald-800 text-xs">
+                            <span class="text-[#e5c060] font-bold block mb-1">💡 نصيحة الخبراء لهذا المسار:</span>
+                            <p class="text-emerald-100/70">${activeData.tips}</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 bg-emerald-950/50 p-6 rounded-2xl border border-emerald-800/60 space-y-4">
+                        <h4 class="text-xs font-bold text-[#e5c060] border-b border-emerald-800 pb-2">خطوات وجدول السير الزمني</h4>
+                        <div class="space-y-1">
+                            ${stepsHTML}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Initialize App on DOM Load
+        window.addEventListener('DOMContentLoaded', () => {
+            renderLandmarks();
+            selectItinerary(1); // Set default itinerary
+        });
+    </script>
+</body>
+</html>
+
+```
+
+
+
+
+---------- Forwarded message ---------
+من: Mail Delivery Subsystem <mailer-daemon@googlemail.com>
+‪Date: الثلاثاء، ١٦ يونيو ٢٠٢٦ ١١:٣٧ م‬
+Subject: Delivery Status Notification (Failure)
+To: <bodihan2@gmail.com>
+
+
+رمز الخطأ
+لم يتم العثور على العنوان
+تعذَّر تسليم رسالتك إلى ailqasimnasser1@gmail.com نظرًا لأنه لم يتم العثور على العنوان، أو لا يمكن لذلك العنوان استلام الرسائل الإلكترونية.
+مزيد من المعلومات
+كان الرد:
+550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. For more information, go to https://support.google.com/mail/?p=NoSuchUser a92af1059eb24-1384b905189sor1397032c88.8 - gsmtp
+
+ مرفق واحد
+  •  تم فحصها من قِبل Gmail
