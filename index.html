@@ -1,78 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مرشد طيبة التاريخي - بوابة معالم المدينة المنورة</title>
-    <!-- Tailwind CSS -->
-     <link rel="icon" href="AL Madinah AL Munawwarah.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>مرشد طيبة - معالم المدينة</title>
+    <link rel="icon" href="madinah-icon.png">
+    <link rel="apple-touch-icon" href="madinah-icon.png">
+    <meta name="apple-mobile-web-app-title" content="مرشد طيبة">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Tajawal:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: 'Tajawal', sans-serif;
             background-color: #FAF8F5;
+            /* إخفاء التظليل الأزرق المزعج عند الضغط في شاشات اللمس */
+            -webkit-tap-highlight-color: transparent;
         }
+
         .font-serif-ar {
             font-family: 'Amiri', serif;
         }
+
         .emerald-dark {
             background-color: #032b1d;
         }
+
         .emerald-gradient {
             background: linear-gradient(135deg, #043a27 0%, #011d13 100%);
         }
+
         .gold-accent {
             color: #c59b27;
         }
+
         .bg-gold-light {
             background-color: #f9f5eb;
         }
+
         .border-gold {
             border-color: #d4af37;
         }
+
         /* Custom dynamic styles */
         .card-shadow {
             box-shadow: 0 10px 30px -15px rgba(4, 58, 39, 0.1);
         }
+
         .landmark-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 20px 40px -15px rgba(4, 58, 39, 0.15);
         }
+
         /* Hide scrollbars but keep functionality */
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
+
         .no-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
     </style>
 </head>
+
 <body class="text-slate-800 antialiased selection:bg-emerald-900 selection:text-white">
 
-    <!-- Top Premium Banner -->
-    <div class="emerald-dark text-amber-100 py-2.5 px-4 text-center text-xs border-b border-amber-500/20 tracking-wide font-medium">
+    <div
+        class="emerald-dark text-amber-100 py-2.5 px-4 text-center text-xs border-b border-amber-500/20 tracking-wide font-medium">
         🕌 "مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ" - بوابة المدينة المنورة التاريخية المعتمدة
     </div>
 
-    <!-- Navigation Header -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-800 to-emerald-950 flex items-center justify-center text-[#d4af37] border border-amber-500/30">
+                <div
+                    class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-800 to-emerald-950 flex items-center justify-center text-[#d4af37] border border-amber-500/30">
                     <span class="font-serif-ar text-2xl font-bold">ط</span>
                 </div>
                 <div>
                     <span class="block text-lg font-black text-emerald-950 tracking-tight">مُرشد طيْبة</span>
-                    <span class="text-[10px] text-slate-400 block -mt-1 font-medium">المرجع الشامل لمعالم المدينة المنورة</span>
+                    <span class="text-[10px] text-slate-400 block -mt-1 font-medium">المرجع الشامل لمعالم المدينة
+                        المنورة</span>
                 </div>
             </div>
-            
+
             <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
                 <a href="#about" class="hover:text-emerald-800 transition-colors">عن طيبة</a>
                 <a href="#explorer" class="hover:text-emerald-800 transition-colors">مستكشف المعالم</a>
@@ -81,43 +98,50 @@
             </div>
 
             <div class="flex items-center gap-2">
-                <a href="#itineraries" class="px-4 py-2 rounded-lg bg-[#043a27] text-[#e5c060] text-xs font-bold hover:bg-emerald-900 transition-all border border-amber-500/20">
+                <a href="#itineraries"
+                    class="px-4 py-2 rounded-lg bg-[#043a27] text-[#e5c060] text-xs font-bold hover:bg-emerald-900 transition-all border border-amber-500/20">
                     خطط رحلتك الآن
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- Main Hero Section -->
     <header class="relative overflow-hidden text-white emerald-gradient py-24 md:py-32 border-b-4 border-[#d4af37]">
-        <!-- Geometric Arabic pattern background overlay -->
-        <div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-repeat" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22 viewBox=%220 0 80 80%22><path d=%22M40 0 L80 40 L40 80 L0 40 Z%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%221.5%22/></svg>');"></div>
-        
+        <div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-repeat"
+            style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22 viewBox=%220 0 80 80%22><path d=%22M40 0 L80 40 L40 80 L0 40 Z%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%221.5%22/></svg>');">
+        </div>
+
         <div class="max-w-5xl mx-auto text-center px-4 relative z-10 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-amber-500/30 text-xs text-[#e5c060]">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-amber-500/30 text-xs text-[#e5c060]">
                 <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
                 محدّث وموثّق لعام 2026 م / 1447 هـ
             </div>
             <h1 class="text-4xl md:text-6xl font-bold font-serif-ar leading-tight text-[#fbf5b7]">
-                دليل المعالم والمساجد التاريخية <span class="block text-2xl md:text-3xl font-sans font-light text-emerald-100/90 mt-2">في مأرز الإيمان ومهاجر الرسول ﷺ</span>
+                دليل المعالم والمساجد التاريخية <span
+                    class="block text-2xl md:text-3xl font-sans font-light text-emerald-100/90 mt-2">في مأرز الإيمان
+                    ومهاجر الرسول ﷺ</span>
             </h1>
             <p class="text-sm md:text-base max-w-2xl mx-auto text-emerald-100/80 leading-relaxed font-light">
-                بوابتك التاريخية لاستكشاف ثمانين موقعاً تاريخياً، ومساجد نزل بها الوحي، وآبار شرب منها المصطفى ﷺ، وجبال شهدت ملاحم تأسيس الإسلام.
+                بوابتك التاريخية لاستكشاف ثمانين موقعاً تاريخياً، ومساجد نزل بها الوحي، وآبار شرب منها المصطفى ﷺ، وجبال
+                شهدت ملاحم تأسيس الإسلام.
             </p>
 
-            <!-- Search and Filter Bar Quick Launch -->
             <div class="max-w-xl mx-auto pt-6">
                 <div class="relative">
-                    <input type="text" id="global-search" oninput="liveSearch(this.value)" placeholder="ابحث عن معلم (مثال: مسجد قباء، بئر عثمان، جبل الرماة)..." class="w-full text-slate-800 pl-4 pr-12 py-4 bg-white border border-slate-200 rounded-xl shadow-xl focus:outline-none focus:ring-2 focus:ring-emerald-800 text-sm">
-                    <svg class="absolute right-4 top-4 h-5 w-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    <input type="text" id="global-search" oninput="liveSearch(this.value)"
+                        placeholder="ابحث عن معلم (مثال: مسجد قباء، بئر عثمان، جبل الرماة)..."
+                        class="w-full text-slate-800 pl-4 pr-12 py-4 bg-white border border-slate-200 rounded-xl shadow-xl focus:outline-none focus:ring-2 focus:ring-emerald-800 text-sm">
+                    <svg class="absolute right-4 top-4 h-5 w-5 text-slate-400" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Stat Summary Panel -->
     <section class="max-w-6xl mx-auto px-4 -mt-10 relative z-20">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-white p-6 rounded-2xl shadow-xl border border-slate-100">
             <div class="p-3 text-center border-l last:border-l-0 border-slate-100">
@@ -139,148 +163,177 @@
         </div>
     </section>
 
-    <!-- Main Explorer Section -->
     <main id="explorer" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        
-        <!-- Header & Category Selectors -->
+
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
             <div>
-                <span class="text-emerald-800 font-bold text-xs uppercase tracking-widest block mb-2">موسوعة معالم طيبة</span>
+                <span class="text-emerald-800 font-bold text-xs uppercase tracking-widest block mb-2">موسوعة معالم
+                    طيبة</span>
                 <h2 class="text-3xl md:text-4xl font-bold font-serif-ar text-slate-900">استكشف مساجد ومعالم المدينة</h2>
-                <p class="text-slate-500 text-xs mt-1">تصفح المعالم بحسب التصنيف لتقرأ عن تاريخها وعمارتها وبياناتها العملية للزيارة.</p>
+                <p class="text-slate-500 text-xs mt-1">تصفح المعالم بحسب التصنيف لتقرأ عن تاريخها وعمارتها وبياناتها
+                    العملية للزيارة.</p>
             </div>
-            
-            <!-- Filter Tabs -->
+
             <div class="flex flex-wrap gap-2 bg-slate-100 p-1.5 rounded-xl border border-slate-200">
-                <button onclick="filterLandmarks('all')" id="tab-all" class="filter-btn px-4 py-2 rounded-lg text-xs font-bold transition-all bg-[#043a27] text-white">الكل</button>
-                <button onclick="filterLandmarks('mosque')" id="tab-mosque" class="filter-btn px-4 py-2 rounded-lg text-xs font-medium text-slate-600 hover:text-emerald-950 transition-all">مساجد تاريخية</button>
-                <button onclick="filterLandmarks('battle')" id="tab-battle" class="filter-btn px-4 py-2 rounded-lg text-xs font-medium text-slate-600 hover:text-emerald-950 transition-all">غزوات ومواقع</button>
-                <button onclick="filterLandmarks('well-valley')" id="tab-well-valley" class="filter-btn px-4 py-2 rounded-lg text-xs font-medium text-slate-600 hover:text-emerald-950 transition-all">آبار وأودية مباركة</button>
+                <button onclick="filterLandmarks('all')" id="tab-all"
+                    class="filter-btn px-4 py-2 rounded-lg text-xs font-bold transition-all bg-[#043a27] text-white">الكل</button>
+                <button onclick="filterLandmarks('mosque')" id="tab-mosque"
+                    class="filter-btn px-4 py-2 rounded-lg text-xs font-medium text-slate-600 hover:text-emerald-950 transition-all">مساجد
+                    تاريخية</button>
+                <button onclick="filterLandmarks('battle')" id="tab-battle"
+                    class="filter-btn px-4 py-2 rounded-lg text-xs font-medium text-slate-600 hover:text-emerald-950 transition-all">غزوات
+                    ومواقع</button>
+                <button onclick="filterLandmarks('well-valley')" id="tab-well-valley"
+                    class="filter-btn px-4 py-2 rounded-lg text-xs font-medium text-slate-600 hover:text-emerald-950 transition-all">آبار
+                    وأودية مباركة</button>
             </div>
         </div>
 
-        <!-- Landmarks Dynamic Grid -->
         <div id="landmarks-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Populated via Javascript -->
         </div>
 
     </main>
 
-    <!-- Interactive Landmark Details Modal -->
-    <div id="details-modal" class="fixed inset-0 z-50 overflow-y-auto hidden bg-emerald-950/60 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-amber-500/10 transition-all duration-300 transform scale-95" id="modal-content">
-            <!-- Content Injected Dynamically -->
+    <div id="details-modal"
+        class="fixed inset-0 z-50 overflow-y-auto hidden bg-emerald-950/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-amber-500/10 transition-all duration-300 transform scale-95"
+            id="modal-content">
         </div>
     </div>
 
-    <!-- Suggested Itineraries Section -->
-    <section id="itineraries" class="bg-gradient-to-br from-emerald-950 to-emerald-900 text-white py-20 px-4 md:px-8 border-y-4 border-[#d4af37]">
+    <section id="itineraries"
+        class="bg-gradient-to-br from-emerald-950 to-emerald-900 text-white py-20 px-4 md:px-8 border-y-4 border-[#d4af37]">
         <div class="max-w-6xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-                <span class="text-[#e5c060] font-bold text-xs uppercase tracking-widest block">خرائط وجداول الزيارة</span>
+                <span class="text-[#e5c060] font-bold text-xs uppercase tracking-widest block">خرائط وجداول
+                    الزيارة</span>
                 <h2 class="text-3xl md:text-4xl font-bold font-serif-ar">مسارات سياحية تاريخية مقترحة</h2>
-                <p class="text-emerald-100/75 text-xs">لقد صممنا لك 3 مسارات ذكية تمكنك من تنظيم زيارتك للمدينة وتغطية المواقع المتقاربة جغرافياً وزمنياً.</p>
+                <p class="text-emerald-100/75 text-xs">لقد صممنا لك 3 مسارات ذكية تمكنك من تنظيم زيارتك للمدينة وتغطية
+                    المواقع المتقاربة جغرافياً وزمنياً.</p>
             </div>
 
-            <!-- Itinerary Switchers -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                
-                <!-- Card 1 -->
-                <div onclick="selectItinerary(1)" id="itinerary-card-1" class="itinerary-card cursor-pointer bg-emerald-900/40 hover:bg-emerald-900/60 p-6 rounded-2xl border-2 border-emerald-800 transition-all text-right space-y-4">
-                    <div class="flex justify-between items-center">
-                        <span class="px-2.5 py-1 rounded bg-[#d4af37]/20 text-[#e5c060] text-[10px] font-bold">مسار قصير</span>
+
+                <div onclick="selectItinerary(1)" id="itinerary-card-1" role="button" tabindex="0"
+                    class="itinerary-card cursor-pointer bg-emerald-900/40 hover:bg-emerald-900/60 p-6 rounded-2xl border-2 border-emerald-800 transition-all text-right space-y-4 outline-none">
+                    <div class="flex justify-between items-center pointer-events-none">
+                        <span class="px-2.5 py-1 rounded bg-[#d4af37]/20 text-[#e5c060] text-[10px] font-bold">مسار
+                            قصير</span>
                         <span class="text-xs text-emerald-300 font-medium">يستغرق 4 ساعات</span>
                     </div>
-                    <h3 class="text-xl font-bold font-serif-ar text-[#fbf5b7]">مسار طيبة الأساسي</h3>
-                    <p class="text-xs text-emerald-100/70 leading-relaxed">مثالي لمن لديه وقت ضيق ويريد زيارة أهم معلمين في المدينة بعد الحرم النبوي مباشرة.</p>
-                    <span class="text-xs font-semibold text-[#e5c060] inline-flex items-center gap-1">عرض تفاصيل الخطة ←</span>
+                    <h3 class="text-xl font-bold font-serif-ar text-[#fbf5b7] pointer-events-none">مسار طيبة الأساسي
+                    </h3>
+                    <p class="text-xs text-emerald-100/70 leading-relaxed pointer-events-none">مثالي لمن لديه وقت ضيق
+                        ويريد زيارة أهم معلمين في المدينة بعد الحرم النبوي مباشرة.</p>
+                    <span
+                        class="text-xs font-semibold text-[#e5c060] inline-flex items-center gap-1 pointer-events-none">عرض
+                        تفاصيل الخطة ←</span>
                 </div>
 
-                <!-- Card 2 -->
-                <div onclick="selectItinerary(2)" id="itinerary-card-2" class="itinerary-card cursor-pointer bg-emerald-900/40 hover:bg-emerald-900/60 p-6 rounded-2xl border-2 border-emerald-800 transition-all text-right space-y-4">
-                    <div class="flex justify-between items-center">
-                        <span class="px-2.5 py-1 rounded bg-blue-500/10 text-blue-300 text-[10px] font-bold">يوم كامل</span>
+                <div onclick="selectItinerary(2)" id="itinerary-card-2" role="button" tabindex="0"
+                    class="itinerary-card cursor-pointer bg-emerald-900/40 hover:bg-emerald-900/60 p-6 rounded-2xl border-2 border-emerald-800 transition-all text-right space-y-4 outline-none">
+                    <div class="flex justify-between items-center pointer-events-none">
+                        <span class="px-2.5 py-1 rounded bg-blue-500/10 text-blue-300 text-[10px] font-bold">يوم
+                            كامل</span>
                         <span class="text-xs text-emerald-300 font-medium">يستغرق 8 ساعات</span>
                     </div>
-                    <h3 class="text-xl font-bold font-serif-ar text-[#fbf5b7]">مسار الغزوات والتاريخ</h3>
-                    <p class="text-xs text-emerald-100/70 leading-relaxed">مخطط شامل يأخذك في رحلة مشوقة عبر معارك ومساجد النبوة الشهيرة من أحد إلى الخندق.</p>
-                    <span class="text-xs font-semibold text-[#e5c060] inline-flex items-center gap-1">عرض تفاصيل الخطة ←</span>
+                    <h3 class="text-xl font-bold font-serif-ar text-[#fbf5b7] pointer-events-none">مسار الغزوات والتاريخ
+                    </h3>
+                    <p class="text-xs text-emerald-100/70 leading-relaxed pointer-events-none">مخطط شامل يأخذك في رحلة
+                        مشوقة عبر معارك ومساجد النبوة الشهيرة من أحد إلى الخندق.</p>
+                    <span
+                        class="text-xs font-semibold text-[#e5c060] inline-flex items-center gap-1 pointer-events-none">عرض
+                        تفاصيل الخطة ←</span>
                 </div>
 
-                <!-- Card 3 -->
-                <div onclick="selectItinerary(3)" id="itinerary-card-3" class="itinerary-card cursor-pointer bg-emerald-900/40 hover:bg-emerald-900/60 p-6 rounded-2xl border-2 border-emerald-800 transition-all text-right space-y-4">
-                    <div class="flex justify-between items-center">
-                        <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-300 text-[10px] font-bold">يومين (مستكشف)</span>
+                <div onclick="selectItinerary(3)" id="itinerary-card-3" role="button" tabindex="0"
+                    class="itinerary-card cursor-pointer bg-emerald-900/40 hover:bg-emerald-900/60 p-6 rounded-2xl border-2 border-emerald-800 transition-all text-right space-y-4 outline-none">
+                    <div class="flex justify-between items-center pointer-events-none">
+                        <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-300 text-[10px] font-bold">يومين
+                            (مستكشف)</span>
                         <span class="text-xs text-emerald-300 font-medium">يستغرق يومين</span>
                     </div>
-                    <h3 class="text-xl font-bold font-serif-ar text-[#fbf5b7]">مسار البركة والمصادر المائية</h3>
-                    <p class="text-xs text-emerald-100/70 leading-relaxed">للغوص عميقاً في تاريخ المدينة والتعرف على الآبار والأودية المباركة التي ارتبطت بالسيرة النبوية.</p>
-                    <span class="text-xs font-semibold text-[#e5c060] inline-flex items-center gap-1">عرض تفاصيل الخطة ←</span>
+                    <h3 class="text-xl font-bold font-serif-ar text-[#fbf5b7] pointer-events-none">مسار البركة والمصادر
+                        المائية</h3>
+                    <p class="text-xs text-emerald-100/70 leading-relaxed pointer-events-none">للغوص عميقاً في تاريخ
+                        المدينة والتعرف على الآبار والأودية المباركة التي ارتبطت بالسيرة النبوية.</p>
+                    <span
+                        class="text-xs font-semibold text-[#e5c060] inline-flex items-center gap-1 pointer-events-none">عرض
+                        تفاصيل الخطة ←</span>
                 </div>
 
             </div>
 
-            <!-- Dynamic Itinerary Display Screen -->
-            <div id="itinerary-display" class="bg-emerald-900/20 rounded-3xl p-6 md:p-10 border border-emerald-800/60 transition-all duration-300">
-                <!-- Injected via JS -->
+            <div id="itinerary-display"
+                class="scroll-mt-24 bg-emerald-900/20 rounded-3xl p-6 md:p-10 border border-emerald-800/60 transition-all duration-300">
             </div>
         </div>
     </section>
 
-    <!-- General Pilgrim Visitor Guidelines -->
     <section id="tips" class="max-w-6xl mx-auto px-4 py-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-5 relative">
-                <!-- Visual fallbacks -->
                 <div class="bg-[#f9f5eb] border-2 border-[#d4af37]/30 rounded-3xl p-8 space-y-6">
                     <h3 class="text-2xl font-serif-ar font-bold text-emerald-950 flex items-center gap-2">
-                         إرشادات الزائر لآثار النبوة
+                        إرشادات الزائر لآثار النبوة
                     </h3>
                     <p class="text-xs text-slate-600 leading-relaxed">
-                        إن زيارة هذه المواقع التاريخية ليست مجرد نزهة سياحية، بل هي رحلة تأمل وروحانية في خطى خير البرية وصحابته الكرام. إليك نصائح ذهبية لضمان رحلة ميسرة ومليئة بالأجر والفائدة.
+                        إن زيارة هذه المواقع التاريخية ليست مجرد نزهة سياحية، بل هي رحلة تأمل وروحانية في خطى خير البرية
+                        وصحابته الكرام. إليك نصائح ذهبية لضمان رحلة ميسرة ومليئة بالأجر والفائدة.
                     </p>
                     <ul class="space-y-3.5 text-xs text-slate-700">
                         <li class="flex items-start gap-2.5">
-                            <span class="h-5 w-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-[10px] shrink-0">✓</span>
-                            <span><strong>الوضوء قبل الذهاب لقباء:</strong> نوصيك بالوضوء في الفندق، حيث أن صلاة ركعتين في مسجد قباء متوضئاً تعدل ثواب عمرة كاملة.</span>
+                            <span
+                                class="h-5 w-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-[10px] shrink-0">✓</span>
+                            <span><strong>الوضوء قبل الذهاب لقباء:</strong> نوصيك بالوضوء في الفندق، حيث أن صلاة ركعتين
+                                في مسجد قباء متوضئاً تعدل ثواب عمرة كاملة.</span>
                         </li>
                         <li class="flex items-start gap-2.5">
-                            <span class="h-5 w-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-[10px] shrink-0">✓</span>
-                            <span><strong>تجنب ساعات الذروة:</strong> يفضل التوجه للمساجد التاريخية في الصباح الباكر (بين ٧ إلى ١٠ صباحاً) لتجنب الزحام والحرارة.</span>
+                            <span
+                                class="h-5 w-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-[10px] shrink-0">✓</span>
+                            <span><strong>تجنب ساعات الذروة:</strong> يفضل التوجه للمساجد التاريخية في الصباح الباكر
+                                (بين ٧ إلى ١٠ صباحاً) لتجنب الزحام والحرارة.</span>
                         </li>
                         <li class="flex items-start gap-2.5">
-                            <span class="h-5 w-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-[10px] shrink-0">✓</span>
-                            <span><strong>تطبيقات النقل المعتمدة:</strong> يسهل الوصول إلى هذه المعالم باستخدام الحافلات السياحية للمدينة أو تطبيقات النقل مثل كابتن، كريم وأوبر المتوفرة بكثرة.</span>
+                            <span
+                                class="h-5 w-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-[10px] shrink-0">✓</span>
+                            <span><strong>تطبيقات النقل المعتمدة:</strong> يسهل الوصول إلى هذه المعالم باستخدام الحافلات
+                                السياحية للمدينة أو تطبيقات النقل مثل كابتن، كريم وأوبر المتوفرة بكثرة.</span>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="lg:col-span-7 space-y-6">
-                <span class="text-emerald-800 font-bold text-xs uppercase tracking-widest block">آداب السلوك والمعرفة</span>
+                <span class="text-emerald-800 font-bold text-xs uppercase tracking-widest block">آداب السلوك
+                    والمعرفة</span>
                 <h2 class="text-3xl font-serif-ar font-bold text-slate-900">تعظيم المكان واستحضار العبرة التاريخية</h2>
                 <p class="text-sm text-slate-600 leading-relaxed">
-                    تضم المدينة المنورة ثروة تاريخية نادرة. نرجو من ضيوف الرحمن والباحثين الالتزام بآداب زيارة المقابر والمقامات النبوية بالدعاء المأثور لشهداء أحد، والمحافظة الكاملة على الآثار وتجنب ممارسات التبرك غير المشروعة حفاظاً على سلامة العقيدة وقداسة المكان.
+                    تضم المدينة المنورة ثروة تاريخية نادرة. نرجو من ضيوف الرحمن والباحثين الالتزام بآداب زيارة المقابر
+                    والمقامات النبوية بالدعاء المأثور لشهداء أحد، والمحافظة الكاملة على الآثار وتجنب ممارسات التبرك غير
+                    المشروعة حفاظاً على سلامة العقيدة وقداسة المكان.
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
                         <span class="block text-emerald-800 font-bold text-sm mb-1">المظهر اللائق</span>
-                        <p class="text-[11px] text-slate-500">الالتزام بالملابس المحتشمة والمناسبة لقدسية المدينة النبوية أثناء تصفح المعالم وزيارتها.</p>
+                        <p class="text-[11px] text-slate-500">الالتزام بالملابس المحتشمة والمناسبة لقدسية المدينة
+                            النبوية أثناء تصفح المعالم وزيارتها.</p>
                     </div>
                     <div class="p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
                         <span class="block text-emerald-800 font-bold text-sm mb-1">الرصد التاريخي</span>
-                        <p class="text-[11px] text-slate-500">تستعين البوابة بالروايات الصحيحة الواردة في كتب السيرة النبوية والمؤرخين المعتمدين لتجنب المبالغات.</p>
+                        <p class="text-[11px] text-slate-500">تستعين البوابة بالروايات الصحيحة الواردة في كتب السيرة
+                            النبوية والمؤرخين المعتمدين لتجنب المبالغات.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Banner and Copyright -->
     <footer class="bg-emerald-950 text-white border-t-4 border-[#d4af37] py-16 px-4">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-center md:text-right">
             <div>
                 <span class="block text-2xl font-serif-ar font-bold text-[#e5c060] mb-2">مرشد طيبة التاريخي</span>
-                <p class="text-xs text-emerald-200/70 max-w-sm">بوابة تفاعلية وبحثية شاملة غير ربحية تهدف لتوثيق وتسهيل سبل المعرفة بمعالم ومساجد مدينة المصطفى ﷺ.</p>
+                <p class="text-xs text-emerald-200/70 max-w-sm">بوابة تفاعلية وبحثية شاملة غير ربحية تهدف لتوثيق وتسهيل
+                    سبل المعرفة بمعالم ومساجد مدينة المصطفى ﷺ.</p>
             </div>
             <div class="flex flex-col gap-2 text-xs text-emerald-300">
                 <span class="font-bold text-white mb-1">روابط مفيدة سريعة</span>
@@ -290,12 +343,12 @@
             </div>
             <div class="text-center md:text-left text-xs text-emerald-400">
                 <p>© 2026 مرشد طيبة التاريخي. جميع الحقوق محفوظة لخدمة المعرفة الإرشادية لضيوف الرحمن والباحثين.</p>
-                <p class="mt-2 text-[10px] text-emerald-500">تم التحقق ومراجعة التواريخ الهجرية ومطابقتها مع المراجع الرسمية المعتمدة لآثار المدينة المنورة.</p>
+                <p class="mt-2 text-[10px] text-emerald-500">تم التحقق ومراجعة التواريخ الهجرية ومطابقتها مع المراجع
+                    الرسمية المعتمدة لآثار المدينة المنورة.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript Data and Controller logic -->
     <script>
         // 1. Comprehensive Database for Madinah Heritage Landmarks
         const landmarksData = [
@@ -504,8 +557,8 @@
 
             // Apply search query
             if (query.trim() !== '') {
-                filtered = filtered.filter(item => 
-                    item.title.toLowerCase().includes(query.toLowerCase()) || 
+                filtered = filtered.filter(item =>
+                    item.title.toLowerCase().includes(query.toLowerCase()) ||
                     item.subtitle.toLowerCase().includes(query.toLowerCase()) ||
                     item.era.toLowerCase().includes(query.toLowerCase()) ||
                     item.history.toLowerCase().includes(query.toLowerCase())
@@ -525,16 +578,19 @@
 
             filtered.forEach(landmark => {
                 const card = document.createElement('div');
-                card.className = "landmark-card bg-white rounded-2xl p-6 border border-slate-100 shadow-sm transition-all duration-300 flex flex-col justify-between cursor-pointer card-shadow";
+                // تعديل الجوال 3: إضافة outline-none و tabindex و role عشان الجوال
+                card.className = "landmark-card bg-white rounded-2xl p-6 border border-slate-100 shadow-sm transition-all duration-300 flex flex-col justify-between cursor-pointer card-shadow outline-none";
+                card.setAttribute('role', 'button');
+                card.setAttribute('tabindex', '0');
                 card.onclick = () => showLandmarkDetails(landmark.id);
-                
+
                 // Color mapping for tags
                 let tagColor = "bg-emerald-50 text-emerald-800";
                 if (landmark.type === 'battle') tagColor = "bg-amber-50 text-amber-800 border border-amber-100";
                 if (landmark.type === 'well-valley') tagColor = "bg-blue-50 text-blue-800 border border-blue-100";
 
                 card.innerHTML = `
-                    <div class="space-y-4">
+                    <div class="space-y-4 pointer-events-none">
                         <div class="flex justify-between items-start">
                             <span class="px-2.5 py-1 rounded text-[10px] font-bold ${tagColor}">${landmark.categoryText}</span>
                             <span class="text-[11px] text-slate-400 font-medium">${landmark.era}</span>
@@ -550,7 +606,7 @@
                         </p>
                     </div>
 
-                    <div class="mt-6 pt-4 border-t border-slate-50 flex justify-between items-center text-xs">
+                    <div class="mt-6 pt-4 border-t border-slate-50 flex justify-between items-center text-xs pointer-events-none">
                         <span class="text-slate-500 flex items-center gap-1">
                             📍 ${landmark.distance}
                         </span>
@@ -566,12 +622,12 @@
         // Filter and Tabs activation
         function filterLandmarks(category) {
             currentFilter = category;
-            
+
             // Update Tab UI
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.className = "filter-btn px-4 py-2 rounded-lg text-xs font-medium text-slate-600 hover:text-emerald-950 transition-all";
             });
-            
+
             const activeTab = document.getElementById(`tab-${category}`);
             if (activeTab) {
                 activeTab.className = "filter-btn px-4 py-2 rounded-lg text-xs font-bold transition-all bg-[#043a27] text-white";
@@ -595,8 +651,8 @@
 
             content.innerHTML = `
                 <div class="emerald-gradient text-white p-8 rounded-t-3xl border-b-4 border-[#d4af37] relative">
-                    <button onclick="closeModal()" class="absolute top-6 left-6 text-emerald-200 hover:text-white bg-emerald-950/50 h-8 w-8 rounded-full flex items-center justify-center font-bold text-sm transition-all border border-emerald-800/60">✕</button>
-                    <span class="text-[#e5c060] text-xs font-bold uppercase tracking-wider block mb-2">${landmark.categoryText}</span>
+                    <button onclick="closeModal()" class="absolute top-6 left-6 text-emerald-200 hover:text-white bg-emerald-950/50 h-8 w-8 rounded-full flex items-center justify-center font-bold text-sm transition-all border border-emerald-800/60 z-10">✕</button>
+                    <span class="text-[#e5c060] text-xs font-bold uppercase tracking-wider block mb-2 mt-4 md:mt-0">${landmark.categoryText}</span>
                     <h2 class="text-3xl font-serif-ar font-bold text-[#fbf5b7]">${landmark.title}</h2>
                     <p class="text-sm text-emerald-100/80 mt-1 leading-relaxed">${landmark.subtitle}</p>
                     
@@ -654,7 +710,7 @@
         }
 
         // Close modal when clicking outside content
-        document.getElementById('details-modal').addEventListener('click', function(e) {
+        document.getElementById('details-modal').addEventListener('click', function (e) {
             if (e.target === this) {
                 closeModal();
             }
@@ -663,14 +719,14 @@
         // Render Suggested Itineraries
         function selectItinerary(id) {
             currentItinerary = id;
-            
+
             // Highlight Selected Card
             document.querySelectorAll('.itinerary-card').forEach(card => {
-                card.className = "itinerary-card cursor-pointer bg-emerald-900/40 hover:bg-emerald-900/60 p-6 rounded-2xl border-2 border-emerald-800 transition-all text-right space-y-4";
+                card.className = "itinerary-card cursor-pointer bg-emerald-900/40 hover:bg-emerald-900/60 p-6 rounded-2xl border-2 border-emerald-800 transition-all text-right space-y-4 outline-none";
             });
             const activeCard = document.getElementById(`itinerary-card-${id}`);
             if (activeCard) {
-                activeCard.className = "itinerary-card cursor-pointer bg-emerald-900/60 p-6 rounded-2xl border-2 border-[#d4af37] transition-all text-right space-y-4 shadow-xl";
+                activeCard.className = "itinerary-card cursor-pointer bg-emerald-900/60 p-6 rounded-2xl border-2 border-[#d4af37] transition-all text-right space-y-4 shadow-xl outline-none";
             }
 
             const activeData = itinerariesData[id];
@@ -680,7 +736,6 @@
             activeData.stops.forEach((step, idx) => {
                 stepsHTML += `
                     <div class="flex gap-4 items-start relative pb-6 last:pb-0">
-                        <!-- Line connecting steps -->
                         ${idx < activeData.stops.length - 1 ? '<div class="absolute right-4.5 top-8 bottom-0 w-0.5 bg-emerald-800"></div>' : ''}
                         
                         <div class="h-9 w-9 rounded-full bg-emerald-800 border border-amber-500/20 text-[#e5c060] text-xs font-bold flex items-center justify-center shrink-0 z-10">
@@ -715,6 +770,11 @@
                     </div>
                 </div>
             `;
+
+            // تعديل الجوال 4: النزول التلقائي لشاشة الجوال عشان يشوف المستخدم التفاصيل اللي طلعت
+            if (window.innerWidth < 1024) {
+                display.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
 
         // Initialize App on DOM Load
@@ -724,4 +784,5 @@
         });
     </script>
 </body>
+
 </html>
